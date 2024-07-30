@@ -264,7 +264,7 @@ footer .next_btn:hover{
   justify-content: space-between;
   opacity: 0;
   pointer-events: none;
-  transition: translate(-50%, -50%) scale(0.9);
+  transition: translate(-50%, -50%) scale(0.9);ion
 }
 .result_box .icon{
   font-size: 100px;
