@@ -7,21 +7,37 @@
 }
 
 body{
-  background: #f2f2f2;
+  background: magenta;
+}
+::selection{
+  color: #fff;
+  background: #007bff;
 }
 .start_btn,
 .info_box,
-.quiz_box{
+.quiz_box,
+.result_box{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .start_btn button{
   font-size: 25px;
   font-weight: 500;
-  color: #fff;
+  color: black;
   padding: 15px 30px;
   outline: none;
   border: none;
@@ -31,10 +47,13 @@ body{
 }
 
 .info_box{
-  display: none;
   width: 540px;
   background: #fff;
   border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .info_box .info_title{
@@ -44,6 +63,7 @@ body{
   display: flex;
   align-items: center;
   padding: 0 35px;
+  border-radius: 5px 5px 00;
   font-size: 20px;
   font-weight: 600;
 }
@@ -75,12 +95,14 @@ body{
   margin: 0 5px;
   height: 40px;
   width: 100px;
-  border: 1px solid transparent;
+  border: none;
+  outline: none;
   border-radius: 5px;
   color: #051923;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  border: 1px solid blue;
   transition: all 0.3s ease;
 }
 .buttons button.restart{
@@ -88,7 +110,7 @@ body{
   border-color: #007bff;
 
 }
-
+/*
 .buttons button.restart:hover{
   background: #007bff;
 }
@@ -101,17 +123,20 @@ body{
   color: #fff;
   background: #007bff;
 }
-
+*/
 .quiz_box{
-  display: none;
   width: 550px;
   background: #fff;
   border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .quiz_box header{
   position: relative;
-  z-index: 99;
+  z-index: 2;
   height: 70px;
   padding: 0 30px;
   background: #fff;
@@ -126,6 +151,7 @@ body{
   font-weight: 600;
 }
 .quiz_box header .timer{
+  color: navy;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -155,9 +181,27 @@ body{
   border-radius: 5px;
   border: 1px solid #343a40;
   user-select: none;
-  font-weight: 500
 }
-
+.quiz_box header .time_line{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #007bff;
+}
+section{
+  padding: 25px 30px 20px 30px;
+  background: #fff;
+}
+section .que_text{
+  font-size: 25px;
+  font-weight: 600;
+}
+section .option_list{
+  padding: 20px 0;
+  display: block;
+}
+/*
 .quiz_box section{
   padding: 25px 30px 20px 30px;
   background: #fff;
@@ -172,6 +216,7 @@ body{
   padding: 20px 0;
   display: block;
 }
+*/
 section .option_list .option{
   background: aliceblue;
   border: 1px solid #84c5fe;
@@ -191,9 +236,20 @@ section .option_list .option:hover{
   border-color: #b8daff;
 
 }
-.option_list .option:last-child{
-  margin-bottom: 0px;
-  
+section .option_list .option.correct{
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+
+}
+section .option_list .option.incorrect{
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+
+}
+section .option_list .option.disabled{
+    pointer-events: none;
 }
 
 .option_list .option .icon{
@@ -205,6 +261,8 @@ section .option_list .option:hover{
   font-size: 13px;
   line-height: 24px;
   position: none;
+  transition: all 0.3s ease;
+  pointer-events: 24px;
 }
 .option_list .option .icon.tick{
   border-color: #23903c;
@@ -216,7 +274,7 @@ section .option_list .option:hover{
   color: #721c24;
   background: #a4283a;
 }
-.quiz_box footer{
+footer{
   height: 60px;
   width: 100%;
   padding: 0 30px;
@@ -224,7 +282,7 @@ section .option_list .option:hover{
   align-items: center;
   justify-content: space-between;
 }
-.quiz_box footer .total_que span{
+footer .total_que span{
   display: flex;
   user-select: none;
 }
@@ -235,7 +293,7 @@ footer .total_que span p{
 .total_que span p:first-child{
   padding-left: 0px;
 }
-footer .next_btn {
+footer button {
   height: 40px;
   padding: 0 20px;
   font-size: 18px;
@@ -246,11 +304,20 @@ footer .next_btn {
   background: #007bff;
   border-radius: 5px;
   border: 1px solid #007bff;
+  line-height: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
   cursor: pointer;
   transition: all 0.3s ease;
 }
-footer .next_btn:hover{
+footer button:hover{
   background: #0263ca;
+}
+footer button.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
 }
 .result_box{
   display: flex;
@@ -265,6 +332,7 @@ footer .next_btn:hover{
   opacity: 0;
   pointer-events: none;
   transition: translate(-50%, -50%) scale(0.9);ion
+  transition: all 0.3s ease;
 }
 .result_box .icon{
   font-size: 100px;
@@ -282,7 +350,7 @@ footer .next_btn:hover{
   font-size: 18px;
   font-weight: 500;
 }
-.score_text span p{
+.score_text .score_text span p{
   font-weight: 600;
   padding: 0 4px;
 }
@@ -303,4 +371,19 @@ footer .next_btn:hover{
   border: 1px solid #007bff;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.buttons button.restart{
+  color: #fff;
+  background: #007bff;
+}
+.buttons button.restart:hover{
+  background: #0263ca;
+}
+.buttons button.quit{
+  color: #fff;
+  background: #007bff;
+}
+.buttons button.quit:hover{
+  background: #0263ca;
+  color: #fff;
 }

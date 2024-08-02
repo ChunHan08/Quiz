@@ -1,13 +1,13 @@
-let question = [
+let questions = [
   {
     numb: 1,
-    question: What Is Taylor Swifts Birthday?",
+    question: "What Is Taylor Swifts Birthday?",
     answer: "Dec 13 1989",
     options: [
       "Oct 13 1989",
       "Dec 13 1989",
       "Dec 27 1989",
-      "Jan 13 1989,
+      "Jan 13 1989",
     ]
   },
   {
@@ -34,7 +34,7 @@ let question = [
   },
   {
     numb: 4,
-    question: "What is Taylor Swift's least streamed on song?",
+    question: "What is Taylor Swift's least streamed song?",
     answer: "All You Had To Do Was Stay - Commentary",
     options: [
       "New Year's Day - Karaoke Version",
@@ -45,7 +45,7 @@ let question = [
   },
   {
     numb: 5,
-    question: "Who is Taylor's current Bf?",
+    question: "Who is Taylor's current Boyfriend?",
     answer: "Travis Kelce",
     options: [
       "Joe Alwyn",
@@ -58,10 +58,10 @@ let question = [
     numb: 6,
     question: "What song is this lyric found in: Never Take Advice from someone, whos, falling apart?",
     answer: "Dear Reader",
-    option: [
+    options: [
       "Mastermind",
       "loml",
-      "The Black Dog"
+      "The Black Dog",
       "Dear Reader",
     ]
   },
@@ -69,11 +69,22 @@ let question = [
       numb: 7,
       question: "What song is this lyric found in: a goddamn blaze in the dark?",
       answer: "Ivy",
-      option: [
+      options: [
         "Cowboy Like Me",
-        "Champagne Problems"
+        "Champagne Problems",
         "Ivy",
         "Willow",
       ]
-    }
-]
+    },
+  {
+    numb: 8,
+    question: "what album has the least amount of songs",
+    answer: "Debut",
+    options: [
+      "Speak Now",
+      "Fearless",
+      "Reputation",
+      "Debut",
+    ]
+  },
+];
