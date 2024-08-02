@@ -8,7 +8,6 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .timer .time_left_txt");
 const timeText= document.querySelector(".time .time_left_txt");
 const time_count = document.querySelector("header .timer .timer_sec");
-
 start_btn.onclick= () => {
   info_box.classList.add("activeInfo")
 }
