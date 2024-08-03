@@ -166,12 +166,20 @@ function startTimer(time){
     }
 
       if(time < 0){
-        clearInterval(counter); r 
+        clearInterval(counter); 
         timeText.textContent = "Time Off";
         const allOptions = option_list.children.length;
         let correcAns = questions[que_count].answer;
-      
-      for(i=0; i < allOptions; i++){
+       for(i=0; i < allOptions; i++){
+         if(option_list.children[i].textContent == correcAns){
+           option_list.children[i].setAttribute("class", "option correct");
+           option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
+           console.log("Auto selected correct answer.");
+         }
+       }
+         
+
+         for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled");
       }
       next_btn.classList.add("show");

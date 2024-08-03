@@ -7,7 +7,7 @@
 }
 
 body {
-  background: coral;
+  background: lightblue;
 }
 ::selection{
   color: #fff;
@@ -113,7 +113,7 @@ body {
 
 .quiz_box{
   width: 550px;
-  background: #fff;
+  background-image: linear-gradient(to top, #17b4d7, #cb87b0);
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
@@ -174,7 +174,7 @@ body {
   bottom: 0px;
   left: 0px;
   height: 3px;
-  background: #007bff;
+  background-image: linear-gradient(to top, #17b4d7, #cb87b0);
 }
 section{
   padding: 25px 30px 20px 30px;
@@ -273,7 +273,7 @@ footer button {
   border: none;
   outline: none;
   color: #fff;
-  background: #007bff;
+  background-image: linear-gradient(to top, #17b4d7, #cb87b0);
   border-radius: 5px;
   border: 1px solid #007bff;
   line-height: 10px;

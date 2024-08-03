@@ -318,6 +318,104 @@ let questions = [
       "Last Kiss",
     ]
   },
-  
+  {
+    numb: 29,
+    question: "What song is this lyric from: I'm the one who burned us down.",
+    answer: "Afterglow",
+    options: [
+      "Cassandra",
+      "Peter",
+      "loml",
+      "Afterglow",
+    ]
+  },
+  {
+    numb: 30,
+    question: "What song is this lyric from: so now I pray to Jesus too.",
+    answer: "Soon You'll Get Better",
+    options: [
+      "Daylight",
+      "Soon You'll Get Better",
+      "The Archer",
+      "Its nice to have a friend",
+    ]
+  },
+  {
+    numb: 31,
+    question: "What song is this lyric from: For a moment i knew comsmic love.",
+    answer: "Down Bad",
+    options: [
+      "My boy only breaks his favourite toys",
+      "Gulity as sin",
+      "Down Bad",
+      "So long london"
+    ]
+  },
+  {
+    numb: 32,
+    question: "What song is this lyric from: But i felt a hole like this.",
+    answer: "loml",
+    options: [
+      "imgonnagetyouback",
+      "loml",
+      "Clara Bow",
+      "The Alchemy",
+    ]
+  },
+  {
+    numb: 33,
+    question: "What song is this lyric from: You know I left a part of me back in New York.",
+    answer: "Hoax",
+    options: [
+      "Hoax",
+      "Mirrorball",
+      "Epiphany",
+      "Seven",
+    ]
+  },
+  {
+    numb: 34,
+    question: "What song is this lyric from: Drank My posion all alone.",
+    answer: "The Great War",
+    options: [
+      "The Great War",
+      "Paris",
+      "Sweet nothing",
+      "Hits diffrent"
+    ]
+  },
+  {
+    numb: 35,
+    question: "What song is this lyric from: I walked in expecting you'd be late.",
+    answer: "Begin Again",
+    options: [
+      "Treacherous",
+      "Begin Again",
+      "Girl At Home",
+      "The Last Time",
+    ]
+  },
+  {
+    numb: 36,
+    question: "What song is this lyric from: Is this the end of all the endings?",
+    answer: "King Of My Heart",
+    options: [
+      "End Game",
+      "Dont't Blame Me",
+      "New Years Day",
+      "King Of My Heart",
+    ]
+  },
+  {
+    numb: 37,
+    question: "What song is this lyric from: It rains when you're here and it rains when you're gone.",
+    answer: "Forever & Always",
+    options: [
+      "Come in with the rain",
+      "Forever & Always",
+      "If this was a movie",
+      "Fearless",
+    ]
+  }
 ];
 
