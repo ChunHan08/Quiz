@@ -208,6 +208,116 @@ let questions = [
       "So it Goes",
     ]
   },
-
+  {
+    numb: 19,
+    question: "What song is this lyric from: chains around my demons?",
+    answer: "Invisble String",
+    options: [
+      "Hoax",
+      "the 1",
+      "illicit affairs",
+      "Invisble String",
+    ]
+  },
+  {
+    numb: 20,
+    question: "What song is this lyric from: you just see right through me?",
+    answer: "Invisible",
+    options: [
+      "Invisible",
+      "Picture to Burn",
+      "Tim McGraw",
+      "Should've Said No",
+    ]
+  },
+  {
+    numb: 21,
+    question: "What song is this lyric from: one prize I'd cheat to win?",
+    answer: "Willow",
+    options: [
+      "Evermore",
+      "Dorthea",
+      "Willow",
+      "Closure",
+    ]
+  },
+  {
+    numb: 22,
+    question: "What song is this lyric from: use my best colors for your portrait?",
+    answer: "Tolerate It",
+    options: [
+      "Tolerate It",
+      "The Archer",
+      "Betty",
+      "Snow on the Beach",
+    ]
+  },
+  {
+    numb: 23,
+    question: "What song is this lyric from: Same old tired, lonely place?",
+    answer: "Enchanted",
+    options: [
+      "Enchanted",
+      "Last Kiss",
+      "Ours",
+      "Sparks Fly",
+    ]
+  },
+  {
+    numb: 24,
+    question: "What song is this lyric from: I could go back to every laugh, but I don't wanna go there anymore?",
+    answer: "Come in with the rain",
+    options: [
+      "Come in with the rain",
+      "Mean",
+      "Hey Stephan",
+      "Ours"
+    ]
+  },
+  {
+    numb: 25,
+    question: "What song is this lyric from:I'd like to hang out with you for my whole life.",
+    answer: "Stay Stay Stay",
+    options: [
+      "The Moment I Knew",
+      "Stay Stay Stay",
+      "The Last Time",
+      "I Wish You Would",
+    ]
+  },
+  {
+    numb: 26,
+    question: "What song is this lyric from: People like you always want back the love they gave away.",
+    answer: "All you had to do was stay",
+    options: [
+      "New Romantics",
+      "Wonderland",
+      "You are in love",
+      "All you had to do was stay",
+    ]
+  },
+  {
+    numb: 27,
+    question: "what song is this lyric from: I left a note on the door with a joke we'd made.",
+    answer: "Holy Ground",
+    options: [
+      "State of grace",
+      "Holy Ground",
+      "Babe",
+      "Forever Winter",
+      ]
+  },
+  {
+    numb: 28,
+    question: "What song is this lyric from: It's okay, life is a tough crowd.",
+    answer: "Innocent",
+    options: [
+      "Innocent",
+      "Timeless",
+      "Better than Revenge",
+      "Last Kiss",
+    ]
+  },
+  
 ];
 
