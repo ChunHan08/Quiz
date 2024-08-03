@@ -90,12 +90,12 @@ let questions = [
   {
     numb: 9,
     question: "When did the Eras tour begin?",
-    answer: "March 17 2023",
+    answer: "March 17, 2023",
     options: [
-      "March 16 2023",
-      "March 17 2023",
-      "March 18 2023",
-      "March 19 2023",
+      "March 16, 2023",
+      "March 17, 2023",
+      "March 18, 2023",
+      "March 19, 2023",
     ]
   },
   {
@@ -112,7 +112,7 @@ let questions = [
   {
     numb: 10,
     question: "How old was Taylor when she won her first Grammy?",
-    answer "20",
+    answer: "20",
     options: [
       "20",
       "21",
@@ -120,4 +120,94 @@ let questions = [
       "23",
     ]
   },
+  {
+    numb: 11,
+    question: "What song is this lyric from: painting pictures in the sky?",
+    answer: "I'm only me when I'm with you",
+    options: [
+      "Picture to Burn",
+      "I'm only me when I'm with you",
+      "Fearless",
+      "White Horse",
+    ]
+  },
+  {
+    numb: 12,
+    question: "What song is this lyric from: until the day I die?",
+    answer: "No Body No Crime",
+    options: [
+      "Evermore",
+      "Cowboy Like Me",
+      "No Body No Crime",
+      "Willow",
+    ]
+  },
+  {
+    numb: 13,
+    question: "What song is this lyric from: trying hard not to look like I'm trying?",
+    answer: "Electric touch",
+    options: [
+      "Sparks fly",
+      "Speak now",
+      "Dear John",
+      "Electric touch",
+    ]
+  },
+  {
+    numb: 14,
+    question: "What song is this lyric from: this godforsaken mess that you made me?",
+    answer: "Illicit affairs",
+    options: [
+      "Illicite affairs",
+      "Seven",
+      "This is me trying",
+      "August",
+    ]
+  },
+  {
+    numb: 15,
+    question: "What song is this lyric from: snakes and stones never broke my bones?",
+    answer: "You Need To Calm Down",
+    options: [
+      "False God",
+      "You Need To Calm Down",
+      "Daylight",
+      "AfterGlow",
+    ]
+  },
+  {
+    numb: 16,
+    question: "What song is this lyric from: spinning out of control?",
+    answer: "Wonderland",
+    options: [
+      "Say Don't Go",
+      "Now That We Don't Talk",
+      "Wonderland",
+      "Is It Over Now",
+    ]
+  },
+  {
+    numb: 17,
+    question: "What song is this lyric from: Hang your head low?",
+    answer: "Cruel Summer",
+    options: [
+      "Cruel Summer",
+      "All Of The Girls You Loved Before",
+      "London Boy",
+      "I Think He Knows",
+    ]
+  },
+  {
+    numb: 18,
+    question: "What song is this lyric from: Don’t read the last page?",
+    answer: "New Years Day",
+    options: [
+      "Call it what you want",
+      "New Years Day",
+      "Delicate",
+      "So it Goes",
+    ]
+  },
+
 ];
+
