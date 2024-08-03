@@ -6,8 +6,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
-  background: magenta;
+body {
+  background: coral;
 }
 ::selection{
   color: #fff;
@@ -110,20 +110,7 @@ body{
   border-color: #007bff;
 
 }
-/*
-.buttons button.restart:hover{
-  background: #007bff;
-}
-.buttons button.quit{
-  color: #fff;
-  border-color: #007bff;
 
-}
-.buttons button.quit:hover{
-  color: #fff;
-  background: #007bff;
-}
-*/
 .quiz_box{
   width: 550px;
   background: #fff;
@@ -201,22 +188,7 @@ section .option_list{
   padding: 20px 0;
   display: block;
 }
-/*
-.quiz_box section{
-  padding: 25px 30px 20px 30px;
-  background: #fff;
-}
 
-.quiz_box section .que_text{
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.quiz_box section .option_list{
-  padding: 20px 0;
-  display: block;
-}
-*/
 section .option_list .option{
   background: aliceblue;
   border: 1px solid #84c5fe;

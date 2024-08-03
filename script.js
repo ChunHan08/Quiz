@@ -5,14 +5,15 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
-const time_line = document.querySelector("header .timer .time_left_txt");
-const timeText= document.querySelector(".time .time_left_txt");
-const time_count = document.querySelector("header .timer .timer_sec");
-start_btn.onclick= () => {
-  info_box.classList.add("activeInfo")
+const time_line = document.querySelector("header .time_line");
+const timeText = document.querySelector(".timer .time_left_txt");
+const timeCount = document.querySelector(".timer .timer_sec");
+
+start_btn.onclick = ()=>{
+  info_box.classList.add("activeInfo");
 }
 
-exit_btn.onclick = () =>{
+exit_btn.onclick = ()=>{
   info_box.classList.remove("activeInfo");
 }
 
@@ -39,6 +40,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = () =>{
   quiz_box.classList.add("activeQuiz");
   result_box.classList.remove("activeResult");
+  
   timeValue = 15;
   que_count = 0;
   que_numb = 1;
@@ -70,7 +72,7 @@ next_btn.onclick = ()=> {
     clearInterval(counter);
     clearInterval(counterLine);
     startTimer(timeValue);
-    StartTimerLine(widthValue);
+    startTimerLine(widthValue);
     timeText.textContent = "Time Left";
 
     next_btn.classList.remove("show");
@@ -140,11 +142,15 @@ function showResult(){
     scoreText.innerHTML = scoreTag;
   }
   else if(userScore > 3){
-    let scoreTag = '<spnice, you got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    let scoreTag = '<span>and congrats! , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
     scoreText.innerHTML = scoreTag;
   }
+  else if(userScore > 1){
+    let scoreTag = '<span>and nice , You got  <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+      scoreText.innerHTML = scoreTag;
+  }
   else{
-    let scoreTag = '<span>you got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>'!!!;
+    let scoreTag = '<span>you got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
     scoreText.innerHTML = scoreTag;
   }
 }

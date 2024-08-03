@@ -78,13 +78,46 @@ let questions = [
     },
   {
     numb: 8,
-    question: "what album has the least amount of songs",
+    question: "What album has the least amount of songs",
     answer: "Debut",
     options: [
       "Speak Now",
       "Fearless",
       "Reputation",
       "Debut",
+    ]
+  },
+  {
+    numb: 9,
+    question: "When did the Eras tour begin?",
+    answer: "March 17 2023",
+    options: [
+      "March 16 2023",
+      "March 17 2023",
+      "March 18 2023",
+      "March 19 2023",
+    ]
+  },
+  {
+    numb: 10,
+    question: "What year did Taylor Win her first Grammy?",
+    answer: "2010",
+    options: [
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+    ]
+  },
+  {
+    numb: 10,
+    question: "How old was Taylor when she won her first Grammy?",
+    answer "20",
+    options: [
+      "20",
+      "21",
+      "22",
+      "23",
     ]
   },
 ];
