@@ -9,11 +9,11 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-start_btn.onclick = ()=>{
+start_btn.onclick = () =>{
   info_box.classList.add("activeInfo");
 }
 
-exit_btn.onclick = ()=>{
+exit_btn.onclick = () =>{
   info_box.classList.remove("activeInfo");
 }
 
@@ -40,7 +40,6 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = () =>{
   quiz_box.classList.add("activeQuiz");
   result_box.classList.remove("activeResult");
-  
   timeValue = 15;
   que_count = 0;
   que_numb = 1;
@@ -85,14 +84,13 @@ next_btn.onclick = ()=> {
 
 function showQuetions(index){
   const que_text = document.querySelector(".que_text");
-  let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +"</span>";
-  let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
-  + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
-  + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
-  + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
+  let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+  let option_tag = '<div class="option">'+ questions[index].options[0] +'<span></span></div>'
+                    +'<div class="option">'+ questions[index].options[1] +'<span></span></div>'
+                    +'<div class="option">'+ questions[index].options[2] +'<span></span></div>'
+                    +'<div class="option">'+ questions[index].options[3] +'<span></span></div>';
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
-
   const option = option_list.querySelectorAll(".option");
   for(i=0; i < option.length; i++){
     option[i].setAttribute("onclick", "optionSelected(this)");
@@ -165,16 +163,16 @@ function startTimer(time){
       timeCount.textContent = "0" + addZero;
     }
 
-      if(time < 0){
-        clearInterval(counter); 
-        timeText.textContent = "Time Off";
-        const allOptions = option_list.children.length;
-        let correcAns = questions[que_count].answer;
-       for(i=0; i < allOptions; i++){
-         if(option_list.children[i].textContent == correcAns){
-           option_list.children[i].setAttribute("class", "option correct");
-           option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
-           console.log("Auto selected correct answer.");
+    if(time < 0){
+      clearInterval(counter);
+      timeText.textContent = "Time Off";
+      const allOptions = option_list.children.length;
+      let correcAns = questions[que_count].answer;
+      for(i=0; i < allOptions; i++){
+        if(option_list.children[i].textContent == correcAns){
+          option_list.children[i].setAttribute("class", "option correct");
+          option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
+          console.log("Auto selected correct answer.");
          }
        }
          
